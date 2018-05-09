@@ -6,6 +6,7 @@ import Splash from './components/Splash';
 import Navigation from './components/Navigation';
 import Detail from './components/Detail';
 import Error from './components/Error';
+import Map from './components/map';
 
 import Websocket from './Websocket';
 
@@ -20,6 +21,7 @@ class App extends Component {
               <Route exact path="/" component={Splash}/>
               <Route path="/overview" component={Navigation}/>
               <Route path="/detail" component={Detail}/>
+              <Route path="/map" component={Map}/>
               <Route component={Error}/>
             </Switch>
           </main>
