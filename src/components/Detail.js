@@ -1,5 +1,5 @@
-import React from 'react'
-import Footer from './Footer'
+import React from 'react';
+import Footer from './Footer';
 
 class Navigation extends React.Component {
    render() {

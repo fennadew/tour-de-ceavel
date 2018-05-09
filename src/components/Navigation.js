@@ -1,40 +1,22 @@
-import React from 'react'
+import React from 'react';
+
+import {data} from "../data/Data";
 
 class Navigation extends React.Component {
   render() {
     return (
       <ul>
-      <li>
-        <a className="navigation-links" href="/detail">
-          <h1>Biogasboot</h1>
-        </a>
-      </li>
-      <li>
-        <a className="navigation-links" href="#">
-          <h1>Metabolic lab</h1>
-        </a>
-      </li>
-      <li>
-        <a className="navigation-links" href="#">
-          <h1>Metabolic lab</h1>
-
-        </a>
-      </li>
-      <li>
-        <a className="navigation-links" href="#">
-          <h1>Metabolic lab</h1>
-        </a>
-      </li>
-      <li>
-        <a className="navigation-links" href="#">
-          <h1>Metabolic lab</h1>
-        </a>
-      </li>
-      <li>
-        <a className="navigation-links" href="#">
-          <h1>Metabolic lab</h1>
-          </a>
-      </li>
+          {
+            data.map((obj, i) => {
+            return (
+                <li key={i}>
+                    <a className="navigation-links" style={{backgroundImage: `url(${obj.imgUrl})`}} href={obj.link}>
+                        <h1>{obj.name}</h1>
+                    </a>
+                </li>
+            );
+          })
+          }
     </ul>
   );
   }
