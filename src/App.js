@@ -11,27 +11,26 @@ import Map from './components/map';
 
 import Websocket from './Websocket';
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
-      <Router>
-        <div className="app">
-          <Header/>
-          <main>
-            <Switch>
-              <Route exact path="/" component={Splash}/>
-              <Route exact path="/info" component={Info}/>
-              <Route exact path="/overview" component={Navigation}/>
-              <Route path="/overview/:boat" component={Detail} />
-              <Route path="/detail" component={Detail}/>
-              <Route path="/map" component={Map}/>
-              <Route component={Error}/>
-            </Switch>
-          </main>
-        </div>
-      </Router>
+        <Router>
+            <div className="app">
+                <Header/>
+                <main>
+                    <Switch>
+                        <Route exact path="/" component={Splash}/>
+                        <Route exact path="/info" component={Info}/>
+                        <Route exact path="/overview" component={Navigation}/>
+                        <Route path="/overview/:boat" component={Detail}/>
+                        <Route path="/detail" component={Detail}/>
+                        <Route path="/map" component={Map}/>
+                        <Route component={Error}/>
+                    </Switch>
+                </main>
+            </div>
+        </Router>
     )
-  }
-}
+};
+
 
 export default App;
