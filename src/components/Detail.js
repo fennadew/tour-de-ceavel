@@ -15,7 +15,7 @@ class Detail extends React.Component {
     render() {
         return (
             <section>
-                <div className="hexagon" style={{backgroundImage: `url(${this.state.boat.imgUrl})`}}>
+                <div className="hexagon detail-hexagon" style={{backgroundImage: `url(${this.state.boat.imgUrl})`}}>
                     <h1>{this.state.boat.name}</h1>
                 </div>
                 <ul>
