@@ -1,7 +1,7 @@
 import React from 'react';
 import {data} from  '../data/Data'
 
-class Splash extends React.Component {
+class Info extends React.Component {
    render() {
       return (
         <section className="section-margin">
@@ -12,4 +12,4 @@ class Splash extends React.Component {
       );
    }
 }
-export default Splash;
+export default Info;
