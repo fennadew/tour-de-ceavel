@@ -161,23 +161,21 @@ a {
 	color: #222221;
 }
 
-ul {
+.navigation-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
+	li {
+		display: inline-block;
+		width: 40vw;
+		height: calc(40vw * 1.1625);
+		margin: -7.5vw 10px;
 
-li {
-	display: inline-block;
-	margin: 20px 0;
-	width: 40vw;
-	height: calc(40vw * 1.1625);
-	margin: -7.5vw 10px;
-
-	&:first-child,
-	&:nth-child(4n) {
-		display: block;
-		margin: 0 20vw;
+		&:first-child,
+		&:nth-child(4n) {
+			display: block;
+			margin: 0 20vw;
+		}
 	}
 }
 

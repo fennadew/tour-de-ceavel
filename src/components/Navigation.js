@@ -11,7 +11,7 @@ class Navigation extends React.Component {
                     <img src={require('../images/hipster-chick.svg')} />
                     <h1>Here you can find important pieces of the ecosystem</h1>
                 </div>
-                <ul>
+                <ul className="navigation-container">
                     {
                         data.map((obj, i) => {
                             return (
