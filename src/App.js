@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route , Switch} from 'react-router-dom';
 
-import Header from './components/Header';
-import Splash from './components/Splash';
-import Info from './components/Info';
+import Header from './components/Header';import Info from './components/Info';
 import Navigation from './components/Navigation';
 import Detail from './components/Detail';
 import Error from './components/Error';
@@ -19,7 +17,7 @@ class App extends Component {
           <Header/>
           <main>
             <Switch>
-              <Route exact path="/" component={Splash}/>
+              <Route exact path="/" component={Info}/>
               <Route exact path="/info" component={Info}/>
               <Route exact path="/overview" component={Navigation}/>
               <Route path="/overview/:boat" component={Detail} />
