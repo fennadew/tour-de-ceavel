@@ -6,7 +6,7 @@ class Info extends React.Component {
       return (
         <section className="section-margin">
           <div className="position">
-            <img className="splash-img" style={{backgroundImage: `url(${data[0].imgUrl})`}}/>
+            <img className="splash-img" style={{backgroundImage: `url(${data[1].imgUrl})`}}/>
             <div className="her-placement">
               <img src={require('../images/hipster-chick.svg')} />
             </div>
