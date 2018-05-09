@@ -19,14 +19,10 @@ class App extends Component {
           <main>
             <Switch>
               <Route exact path="/" component={Splash}/>
-<<<<<<< HEAD
               <Route exact path="/overview" component={Navigation}/>
-                <Route path="/overview/:boat" component={Detail} />
-=======
-              <Route path="/overview" component={Navigation}/>
+              <Route path="/overview/:boat" component={Detail} />
               <Route path="/detail" component={Detail}/>
               <Route path="/map" component={Map}/>
->>>>>>> map
               <Route component={Error}/>
             </Switch>
           </main>
