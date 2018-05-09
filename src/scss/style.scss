@@ -105,6 +105,13 @@ section {
 	display: block;
 }
 
+.app {
+	background: #fff;
+	max-width: 30em;
+	margin: auto;
+	padding-bottom: 3em;
+}
+
 .section-margin .position {
 	box-sizing: border-box;
 	margin: 0 1.875em;
@@ -162,6 +169,7 @@ section {
 	transform: scale(.7)
 }
 body {
+	background: rgba(0,0,0,0.1);
 	line-height: 1;
 }
 
