@@ -239,7 +239,7 @@ li {
 	}
 }
 
-.navigation-links {
+.hexagon {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -262,7 +262,7 @@ li {
 		opacity: 0.4;
 		background-color: #222221;
 	}
-	h2 {
+	h1, h2 {
 		z-index: 1;
 		text-align: center;
 		text-transform: uppercase;

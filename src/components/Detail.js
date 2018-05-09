@@ -1,20 +1,34 @@
 import React from 'react';
 import Footer from './Footer';
 
-class Navigation extends React.Component {
-   render() {
-      return (
-        <section>
-          <ul>
-            <li>Data</li>
-            <li>Data</li>
-            <li>Data</li>
-          </ul>
-          <p>Beschrijving voor het onderwerp</p>
-          <p>Nog meer text om het een beetje op te vullen</p>
-          <Footer/>
-        </section>
-      );
-   }
+class Detail extends React.Component {
+    state = {
+        boat: ''
+    };
+    componentDidMount() {
+        const { location: { state } } = this.props;
+        this.setState({
+            boat: state.obj
+        });
+    }
+
+    render() {
+        return (
+            <section>
+                <div className="hexagon" style={{backgroundImage: `url(${this.state.boat.imgUrl})`}}>
+                    <h1>{this.state.boat.name}</h1>
+                </div>
+                <ul>
+                    <li>Data</li>
+                    <li>Data</li>
+                    <li>Data</li>
+                </ul>
+                <p>Beschrijving voor het onderwerp</p>
+                <p>Nog meer text om het een beetje op te vullen</p>
+                <Footer/>
+            </section>
+        );
+    }
 }
-export default Navigation;
+
+export default Detail;

@@ -2,31 +2,31 @@ export const data = [
     {
         name: 'Biogasboot',
         imgUrl: require('../images/biogasboot.jpeg'),
-        link: '/biogasboot'
+        link: '/overview/biogasboot'
     },
     {
         name: 'Metabolic lab',
         imgUrl: require('../images/metabolic.jpg'),
-        link: '/metabolic-lab'
+        link: '/overview/metabolic-lab'
     },
     {
-        name: "De Ceuvel community",
+        name: 'De Ceuvel community',
         imgUrl: require('../images/community.jpg'),
-        link: '/de-ceuvel-community'
+        link: '/overview/de-ceuvel-community'
     },
     {
-        name: "Greenhouse",
+        name: 'Greenhouse',
         imgUrl: require('../images/greenhouse.png'),
-        link: '/greenhouse'
+        link: '/overview/greenhouse'
     },
     {
-        name: "Urban biorefinery",
+        name: 'Urban biorefinery',
         imgUrl: require('../images/bio.png'),
-        link: '/urban-biorefinery'
+        link: '/overview/urban-biorefinery'
     },
     {
-        name: "Cafe de Ceuvel",
+        name: 'Cafe de Ceuvel',
         imgUrl: require('../images/cafe.jpg'),
-        link: '/cafe-de-ceuvel'
+        link: '/overview/cafe-de-ceuvel'
     }
 ]

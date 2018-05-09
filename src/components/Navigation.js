@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import {data} from "../data/Data";
+import { data } from "../data/Data";
 
 class Navigation extends React.Component {
     render() {
@@ -15,10 +16,9 @@ class Navigation extends React.Component {
                         data.map((obj, i) => {
                             return (
                                 <li key={i}>
-                                    <a className="navigation-links" style={{backgroundImage: `url(${obj.imgUrl})`}}
-                                       href={obj.link}>
+                                    <Link to={{pathname: obj.link, state: {obj: obj}}}  className="hexagon" style={{backgroundImage: `url(${obj.imgUrl})`}}>
                                         <h2>{obj.name}</h2>
-                                    </a>
+                                    </Link>
                                 </li>
                             );
                         })

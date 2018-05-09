@@ -18,8 +18,8 @@ class App extends Component {
           <main>
             <Switch>
               <Route exact path="/" component={Splash}/>
-              <Route path="/overview" component={Navigation}/>
-              <Route path="/detail" component={Detail}/>
+              <Route exact path="/overview" component={Navigation}/>
+                <Route path="/overview/:boat" component={Detail} />
               <Route component={Error}/>
             </Switch>
           </main>
