@@ -23,8 +23,8 @@ class Detail extends React.Component {
                     <li>Data</li>
                     <li>Data</li>
                 </ul>
-                <p>Beschrijving voor het onderwerp</p>
-                <p>Nog meer text om het een beetje op te vullen</p>
+                <h2>Description</h2>
+                <p>Some random text here we go again this is some awesome text trying to fill it up so we know how much of this sentence will fill the content</p>
                 <Footer/>
             </section>
         );
