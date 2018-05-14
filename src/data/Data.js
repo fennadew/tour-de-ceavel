@@ -5,17 +5,21 @@ export const data = [
         link: '/overview/biogasboat',
         previousLink: '/overview/cafe-de-ceuvel',
         previousName: 'Cafe de Ceuvel',
+        previousImgUrl: require('../images/cafe.jpg'),
         nextLink: '/overview/metabolic-lab',
-        nextName:  'Metabolic lab'
+        nextName:  'Metabolic lab',
+        nextImgUrl: require('../images/metabolic.jpg')
     },
     {
         name: 'Metabolic lab',
         imgUrl: require('../images/metabolic.jpg'),
         link: '/overview/metabolic-lab',
-        previousLink: '/overview/biogasboot',
+        previousLink: '/overview/biogasboat',
         previousName: 'Biogasboat',
+        previousImgUrl: require('../images/biogasboot.jpeg'),
         nextLink: '/overview/de-ceuvel-community',
-        nextName: 'De Ceuvel community'
+        nextName: 'De Ceuvel community',
+        nextImgUrl: require('../images/community.jpg')
     },
     {
         name: 'De Ceuvel community',
@@ -23,8 +27,10 @@ export const data = [
         link: '/overview/de-ceuvel-community',
         previousLink: '/overview/metabolic-lab',
         previousName: 'Metabolic lab',
+        previousImgUrl: require('../images/greenhouse.png'),
         nextLink: '/overview/greenhouse',
         nextName: 'Greenhouse',
+        nextImgUrl: require('../images/community.jpg')
     },
     {
         name: 'Greenhouse',
@@ -32,8 +38,10 @@ export const data = [
         link: '/overview/greenhouse',
         previousLink: '/overview/de-ceuvel-community',
         previousName: 'De Ceuvel community',
+        previousImgUrl: require('../images/community.jpg'),
         nextLink: '/overview/urban-biorefinery',
-        nextName:  'Urban biorefinery'
+        nextName:  'Urban biorefinery',
+        nextImgUrl: require('../images/bio.png')
     },
     {
         name: 'Urban biorefinery',
@@ -41,8 +49,10 @@ export const data = [
         link: '/overview/urban-biorefinery',
         previousLink: '/overview/greenhouse',
         previousName: 'Greenhouse',
+        previousImgUrl: require('../images/greenhouse.png'),
         nextLink: '/overview/cafe-de-ceuvel',
-        nextName: 'Cafe de Ceuvel'
+        nextName: 'Cafe de Ceuvel',
+        nextImgUrl: require('../images/cafe.jpg')
     },
     {
         name: 'Cafe de Ceuvel',
@@ -50,7 +60,9 @@ export const data = [
         link: '/overview/cafe-de-ceuvel',
         previousLink: '/overview/urban-biorefinery',
         previousName: 'Urban biorefinery',
-        nextLink: '/overview/metabolic-lab',
+        previousImgUrl: require('../images/bio.png'),
+        nextLink: '/overview/biogasboat',
         nextName: 'Biogasboat',
+        nextImgUrl: require('../images/biogasboot.jpeg')
     }
 ]
