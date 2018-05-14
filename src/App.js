@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route , Switch} from 'react-router-dom';
+import { withRouter, Route , Switch} from 'react-router-dom';
 
 import Header from './components/Header';
 import Info from './components/Info';
@@ -11,13 +11,20 @@ import Splash from './components/Splash';
 
 import Websocket from './Websocket';
 
-const App = () => {
-    return (
-        <Router>
+
+            {/*<TransitionGroup component={null}>*/}
+                {/*<CSSTransition key={location.key} classNames='fade' timeout={1500}>*/}
+                    {/*<Switch location={location}>*/}
+                    {/*</Switch>*/}
+                {/*</CSSTransition>*/}
+            {/*</TransitionGroup>*/}
+
+
+const App = withRouter(({location}) => (
             <div className="app">
-                <Header/>
+                <Header {...location}/>
                 <main>
-                    <Switch>
+                    <Switch location={location}>
                         <Route exact path="/" component={Info}/>
                         <Route exact path="/info" component={Info}/>
                         <Route exact path="/overview" component={Navigation}/>
@@ -28,9 +35,7 @@ const App = () => {
                     </Switch>
                 </main>
             </div>
-        </Router>
-    )
-};
+    ));
 
 
 export default App;
