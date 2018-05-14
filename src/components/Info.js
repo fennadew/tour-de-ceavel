@@ -1,5 +1,6 @@
 import React from 'react';
-import {data} from  '../data/Data'
+import { data } from  '../data/Data'
+import { Link } from 'react-router-dom';
 
 class Info extends React.Component {
    render() {
@@ -16,7 +17,7 @@ class Info extends React.Component {
               be your tour guide for
               today. De Ceuvel is a sustainable, closed-loop incubator that hosts a thriving community of creative and social enterprises.
             </p>
-            <a href="/overview">The Ecosystem <img className="chev" src={require('../images/chev.svg')} /></a>
+            <Link to='/overview'>The Ecosystem <img className="chev" src={require('../images/chev.svg')} /></Link>
           </article>
         </section>
       );

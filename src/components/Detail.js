@@ -38,7 +38,7 @@ class Detail extends Component {
         if (boat) {
             content =
                 <section className="detail-container">
-                    <div className="hexagon detail-hexagon" style={{backgroundImage: `url(${boat.imgUrl})`}}>
+                    <div className="hexagon detail-hexagon lazyload" style={{backgroundImage: `url(${boat.imgUrl})`}}>
                         <h1>{boat.name}</h1>
                     </div>
                     <ul className="facts-list">
