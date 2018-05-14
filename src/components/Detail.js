@@ -16,12 +16,18 @@ class Detail extends Component {
         let productionActive = false;
         let productionStatus;
         if (data.heatpump) {
-            heatPumpActive = true;
+            heatPumpActive = true
+            data.heatpump = Math.round(data.heatpump * 100) /100
+
         }
+
         if (data.solar) {
             productionActive = true;
+            let newSolar = -1 * data.solar
+            data.solar = Math.round(newSolar * 100) /100
+
             let heatpump = data.heatpump ? data.heatpump : 0;
-            let diff = (-1 * data.solar) - (data.consumption + heatpump);
+            let diff = newSolar - (data.consumption + heatpump);
             if (diff > 0) {
                 productionStatus = "green";
             } else {
@@ -32,6 +38,8 @@ class Detail extends Component {
             productionStatus = "red";
         }
 
+        data.consumption = Math.round(data.consumption * 100 ) / 100
+
         this.setState({
             data,
             heatPumpActive,
@@ -41,6 +49,7 @@ class Detail extends Component {
     };
 
     render() {
+
         const boat = data.find(b => b.link === this.props.match.url);
         let content;
 
@@ -64,8 +73,8 @@ class Detail extends Component {
                         </ul>
                         <div className="status">
                         <span className={this.state.heatPumpActive ? "left" : "left hidden"}>{this.state.data.heatpump}W</span>
-                        <span className={this.state.productionActive ? "center" : "center hidden"}>W</span>
-                        <span className={"right"}>W</span>
+                        <span className={this.state.productionActive ? "center" : "center hidden"}>{this.state.data.solar}W</span>
+                        <span className={"right"}>{this.state.data.consumption}W</span>
                         </div>
                         <div className="moving-lines red one">
                             <hr/>
