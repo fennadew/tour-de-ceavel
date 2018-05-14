@@ -60,6 +60,11 @@ class Detail extends Component {
                             <li style={{backgroundImage: `url(${require('../images/ceuvel.png')})`}}
                                 className="block"></li>
                         </ul>
+                        <div className="status">
+                        <span className={this.state.heatPumpActive ? "left" : "left hidden"}>W</span>
+                        <span className={this.state.productionActive ? "center" : "center hidden"}>W</span>
+                        <span className={"right"}>W</span>
+                        </div>
                         <div className="moving-lines red one">
                             <hr/>
                         </div>
@@ -73,7 +78,7 @@ class Detail extends Component {
                         <div className={`moving-lines four ${this.state.productionStatus}`}>
                             <hr/>
                         </div>
-                        <div className={this.state.heatPumpActive ? "moving-lines six red" : "moving-lines six red hidden"}>
+                        <div className={this.state.heatPumpActive ? "moving-lines five red" : "moving-lines five red hidden"}>
                             <hr/>
                         </div>
                         <div className={`moving-lines six red`}>

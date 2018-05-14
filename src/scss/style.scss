@@ -470,7 +470,7 @@ a {
       color: #FFF;
     }
     &.block {
-      margin: 60px calc((100% - 50px) / 2) 20px;
+      margin: 90px calc((100% - 50px) / 2) 20px;
       height: 50px;
       width: 50px;
     }
@@ -497,17 +497,17 @@ a {
     }
   }
   &.one {
-      top: 120px;
+      top: 150px;
       right: calc(75px/2);
   }
   &.three {
-    top: 120px;
+    top: 150px;
     left: calc(75px/2);
   }
   &.two {
     height: 34px;
     width: 3px;
-    top: 120px;
+    top: 150px;
     left: 0;
     right: 0;
     margin: auto;
@@ -524,7 +524,7 @@ a {
   &.four {
     height: 34px;
     width: 3px;
-    top: 150px;
+    top: 184px;
     left: 0;
     right: 0;
     margin: auto;
@@ -540,7 +540,7 @@ a {
   &.five, &.six {
     height: 15px;
     width: calc(50% - 80px/2);
-    top: 142px;
+    top: 176px;
     overflow: hidden;
     hr {
       width: 200%;
@@ -561,6 +561,25 @@ a {
     hr {
       animation: moveRight 6s linear infinite;
     }
+  }
+}
+
+.status {
+  position: absolute;
+  top: 129px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  span {
+    width: 75px;
+    text-align: center;
+    display: block;
+  }
+  &.left {
+    left: calc(75px/2);
+  }
+  &.right {
+    right: calc(75px/2);
   }
 }
 
