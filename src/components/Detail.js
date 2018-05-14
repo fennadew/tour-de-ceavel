@@ -8,7 +8,8 @@ class Detail extends Component {
     state = {
         heatPumpActive: false,
         productionActive: false,
-        productionStatus: "green"
+        productionStatus: "green",
+        data: {}
     }
     getWebSocketData = (data) => {
         let heatPumpActive = false;
@@ -28,10 +29,11 @@ class Detail extends Component {
             }
         }
         else {
-            productionStatus = "red"
+            productionStatus = "red";
         }
 
         this.setState({
+            data,
             heatPumpActive,
             productionActive,
             productionStatus
@@ -61,7 +63,7 @@ class Detail extends Component {
                                 className="block"></li>
                         </ul>
                         <div className="status">
-                        <span className={this.state.heatPumpActive ? "left" : "left hidden"}>W</span>
+                        <span className={this.state.heatPumpActive ? "left" : "left hidden"}>{this.state.data.heatpump}W</span>
                         <span className={this.state.productionActive ? "center" : "center hidden"}>W</span>
                         <span className={"right"}>W</span>
                         </div>
