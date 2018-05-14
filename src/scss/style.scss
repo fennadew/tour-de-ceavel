@@ -116,7 +116,6 @@ body, html, #root  {
 	max-width: 30em;
 	margin: auto;
 	min-height: 100vh;
-	padding-bottom: 3em;
 }
 
 .section-margin .position {
@@ -442,8 +441,9 @@ a {
 }
 
 .detail-footer {
-  position: fixed;
-   bottom: 0;
+  padding-top: 20px;
+  position: static;
+  bottom: 0;
   width: 100%;
   left: 0;
   right: 0;

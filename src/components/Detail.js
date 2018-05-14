@@ -4,11 +4,14 @@ import Footer from './Footer';
 import {data} from '../data/Data';
 
 const Detail = (props) => {
+
     const boat = data.find(b => b.link === props.match.url);
+    console.log(boat)
     let content;
 
     if (boat)
         content =
+        <div>
             <section className="detail-container">
                 <div className="hexagon detail-hexagon" style={{backgroundImage: `url(${boat.imgUrl})`}}>
                     <h1>{boat.name}</h1>
@@ -19,10 +22,10 @@ const Detail = (props) => {
                     <li>Data</li>
                 </ul>
                 <h2>Description</h2>
-                <p>Some random text here we go again this is some awesome text trying to fill it up so we know how much
-                    of this sentence will fill the content</p>
-                <Footer boat={boat}/>
-            </section>;
+                <p>{boat.detailText}</p>
+            </section>
+            <Footer boat={boat}/>
+        </div>
     else
         content =
             <section>
@@ -38,5 +41,3 @@ const Detail = (props) => {
 };
 
 export default Detail;
-
-
