@@ -106,9 +106,11 @@ section {
 }
 
 .app {
+	box-sizing: border-box;
 	background: #fff;
 	max-width: 30em;
 	margin: auto;
+	min-height: 100vh;
 	padding-bottom: 3em;
 }
 
