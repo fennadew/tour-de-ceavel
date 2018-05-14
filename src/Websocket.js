@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import SockJS  from 'sockjs-client';
 import Stomp from '@stomp/stompjs';
-const socket = new SockJS('https://app.jouliette.net/stomp/');
-const client = Stomp.over(socket);
 
 let client;
 
