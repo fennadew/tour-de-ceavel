@@ -9,7 +9,6 @@ import Error from './components/Error';
 import Map from './components/map';
 import Splash from './components/Splash';
 
-import Websocket from './Websocket';
 
 
             {/*<TransitionGroup component={null}>*/}

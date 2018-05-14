@@ -8,7 +8,8 @@ export const data = [
         previousImgUrl: require('../images/cafe.jpg'),
         nextLink: '/overview/metabolic-lab',
         nextName:  'Metabolic lab',
-        nextImgUrl: require('../images/metabolic.jpg')
+        nextImgUrl: require('../images/metabolic.jpg'),
+        detailText: 'Testing out some text'
     },
     {
         name: 'Metabolic lab',
@@ -18,11 +19,12 @@ export const data = [
         previousName: 'Biogasboat',
         previousImgUrl: require('../images/biogasboot.jpeg'),
         nextLink: '/overview/de-ceuvel-community',
-        nextName: 'De Ceuvel community',
-        nextImgUrl: require('../images/community.jpg')
+        nextName: 'Community',
+        nextImgUrl: require('../images/community.jpg'),
+        detailText: 'Metabolic has designed and implemented the sustainable techniques at Cleantech Playground De Ceuvel. Matabolic assist companies and municipalities also advise to make transposition to the economic economy. Matabolic lab is the educational and cleantech showcase facility of metabolic and an inspiring place for workshops, courses, presentations, business events and much more.'
     },
     {
-        name: 'De Ceuvel community',
+        name: 'Community',
         imgUrl: require('../images/community.jpg'),
         link: '/overview/de-ceuvel-community',
         previousLink: '/overview/metabolic-lab',
@@ -30,18 +32,20 @@ export const data = [
         previousImgUrl: require('../images/greenhouse.png'),
         nextLink: '/overview/greenhouse',
         nextName: 'Greenhouse',
-        nextImgUrl: require('../images/community.jpg')
+        nextImgUrl: require('../images/community.jpg'),
+        detailText: 'Testing out some text'
     },
     {
         name: 'Greenhouse',
         imgUrl: require('../images/greenhouse.png'),
         link: '/overview/greenhouse',
         previousLink: '/overview/de-ceuvel-community',
-        previousName: 'De Ceuvel community',
+        previousName: 'Community',
         previousImgUrl: require('../images/community.jpg'),
         nextLink: '/overview/urban-biorefinery',
         nextName:  'Urban biorefinery',
-        nextImgUrl: require('../images/bio.png')
+        nextImgUrl: require('../images/bio.png'),
+        detailText: 'De Greenhouse is het sluitstuk van de voedselkringloop op De Ceuvel. De gewassen groeien op de organische restromen van de hele De ceuvel'
     },
     {
         name: 'Urban biorefinery',
@@ -52,7 +56,8 @@ export const data = [
         previousImgUrl: require('../images/greenhouse.png'),
         nextLink: '/overview/cafe-de-ceuvel',
         nextName: 'Cafe de Ceuvel',
-        nextImgUrl: require('../images/cafe.jpg')
+        nextImgUrl: require('../images/cafe.jpg'),
+        detailText: 'Testing out some text'
     },
     {
         name: 'Cafe de Ceuvel',
@@ -63,6 +68,7 @@ export const data = [
         previousImgUrl: require('../images/bio.png'),
         nextLink: '/overview/biogasboat',
         nextName: 'Biogasboat',
-        nextImgUrl: require('../images/biogasboot.jpeg')
+        nextImgUrl: require('../images/biogasboot.jpeg'),
+        detailText: 'Testing out some text'
     }
 ]
