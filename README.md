@@ -3,7 +3,7 @@
 
 With `This` app an user can make his own tour in De Ceuvel providing information about the ecosystem and different boats that are connected with each other, using real time data.
 
-<div align="center" width="100px">
+<div width="75px">
   <img src="tour-de-ceuvel.gif" alt="">
 </div>
 
