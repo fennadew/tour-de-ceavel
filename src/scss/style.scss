@@ -461,7 +461,7 @@ a {
       animation: glowRed 2s infinite;
     }
     &.green {
-      box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+      box-shadow: 0 0 20px rgba(183, 222, 100, 0.6);
       animation: glowGreen 2s infinite;
     }
     &.inactive {
@@ -471,7 +471,6 @@ a {
       width: 92px;
       height: 92px;
       line-height: 92px;
-      background-color: #80DAB9;
       color: #FFF;
     }
     &.block {
@@ -610,8 +609,8 @@ a {
     }
   }
   hr {
-    border-top-color: green;
-    border-left-color: green;
+    border-top-color: #B7DE8C;
+    border-left-color: #B7DE8C;
   }
 }
 
@@ -683,13 +682,13 @@ a {
 
 @keyframes glowGreen {
   0% {
-    box-shadow: 0 0 25px rgba(0, 255, 0, 0.6);
+    box-shadow: 0 0 25px rgba(183, 222, 100, 0.6);
   }
   50% {
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+    box-shadow: 0 0 10px rgba(183, 222, 100, 0.6);
   }
   100% {
-    box-shadow: 0 0 25px rgba(0, 255, 0, 0.6);
+    box-shadow: 0 0 25px rgba(183, 222, 100, 0.6);
   }
 }
 
@@ -731,25 +730,21 @@ a {
 
 // Begin Transitie
 .fade-enter {
-  position: absolute;
   top: 105px;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   opacity: 0.01;
-  transform: scale(0.9) translateY(50px);
 }
 
 .fade-enter-active {
-  position: absolute;
   top: 105px;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   opacity: 1;
-  transform: scale(1) translateY(0);
   transition: all 300ms ease-out;
 }
 
@@ -762,7 +757,6 @@ a {
   right: 0;
   margin: auto;
   opacity: 1;
-  transform: scale(1) translateY(0);
 }
 
 .fade-exit-active {
@@ -773,6 +767,5 @@ a {
   right: 0;
   margin: auto;
   opacity: 0.01;
-  transform: scale(0.9) translateY(50px);
   transition: all 300ms ease-out;
 }
