@@ -106,6 +106,10 @@ section {
   display: block;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body, html, #root  {
   height: 100%;
 }
@@ -480,6 +484,12 @@ a {
       background-color: #222221;
     }
   }
+}
+
+.back {
+  background: url("../images/chev.svg") no-repeat center;
+  transform: rotate(180deg);
+  background-size: 14px;
 }
 
 /*
