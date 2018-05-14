@@ -11,22 +11,20 @@ const Detail = (props) => {
 
     if (boat)
         content =
-        <div>
-            <section className="detail-container">
-                <div className="hexagon detail-hexagon" style={{backgroundImage: `url(${boat.imgUrl})`}}>
-                    <h1>{boat.name}</h1>
-                </div>
-                <ul className="facts-list">
-                    <li>Data</li>
-                    <li className="big">Data</li>
-                    <li>Data</li>
-                </ul>
-                <h2>Description</h2>
-                <p>{boat.detailText}</p>
-            </section>
-            <WebSocket/>
-            <Footer boat={boat}/>
-        </div>
+          <section className="detail-container">
+              <div className="hexagon detail-hexagon" style={{backgroundImage: `url(${boat.imgUrl})`}}>
+                  <h1>{boat.name}</h1>
+              </div>
+              <ul className="facts-list">
+                  <li>Data</li>
+                  <li className="big">Data</li>
+                  <li>Data</li>
+              </ul>
+              <h2>Description</h2>
+              <p>{boat.detailText}</p>
+              <Footer boat={boat}/>
+              <WebSocket/>
+          </section>
     else
         content =
             <section>

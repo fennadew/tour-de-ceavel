@@ -245,6 +245,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 3em;
   li {
     display: inline-block;
     width: 40vw;
@@ -414,7 +416,10 @@ a {
 }
 
 .detail-container {
+  position: relative;
+  min-height:  calc(100vh - 105px);
   padding: 0 16px;
+  padding-bottom: 8em;
   h2 {
     padding-top: 20px;
     font-weight: 800;
@@ -446,7 +451,7 @@ a {
 
 .detail-footer {
   padding-top: 20px;
-  position: static;
+  position: absolute;
   bottom: 0;
   width: 100%;
   left: 0;

@@ -28,7 +28,6 @@ const App = withRouter(({location}) => (
                         <Route exact path="/info" component={Info}/>
                         <Route exact path="/overview" component={Navigation}/>
                         <Route path="/overview/:boat" component={Detail}/>
-                        <Route path="/detail" component={Detail}/>
                         <Route path="/map" component={Map}/>
                         <Route component={Error}/>
                     </Switch>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { data } from "../data/Data";
 
 class Navigation extends React.Component {
+
     render() {
         return (
             <section>
