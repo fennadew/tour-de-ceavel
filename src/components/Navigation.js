@@ -16,7 +16,7 @@ class Navigation extends React.Component {
                         data.map((obj, i) => {
                             return (
                                 <li key={i}>
-                                    <Link to={{pathname: obj.link, state: {obj: obj}}}  className="hexagon" style={{backgroundImage: `url(${obj.imgUrl})`}}>
+                                    <Link to={obj.link}  className="hexagon" style={{backgroundImage: `url(${obj.imgUrl})`}}>
                                         <h2>{obj.name}</h2>
                                     </Link>
                                 </li>
