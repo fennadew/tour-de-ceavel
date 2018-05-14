@@ -6,29 +6,33 @@ import WebSocket from "../Websocket";
 
 class Detail extends Component {
     state = {
-        heatPumpActive: true,
-        productionActive: true,
+        heatPumpActive: false,
+        productionActive: false,
+        productionStatus: "green"
     }
     getWebSocketData = (data) => {
-        console.log(data);
         let heatPumpActive = false;
         let productionActive = false;
+        let productionStatus;
         if (data.heatpump) {
             heatPumpActive = true;
         }
-        console.log(data.solar)
         if (data.solar) {
             productionActive = true;
             let heatpump = data.heatpump ? data.heatpump : 0;
-            let diff = data.solar - (data.consumption + heatpump);
-            console.log(typeof data.solar);
+            let diff = (-1 * data.solar) - (data.consumption + heatpump);
+            if (diff > 0) {
+                productionStatus = "green";
+            } else {
+                productionStatus = "red";
+            }
         }
 
         this.setState({
             heatPumpActive,
-            productionActive
+            productionActive,
+            productionStatus
         });
-
     };
 
     render() {
@@ -44,7 +48,7 @@ class Detail extends Component {
                     <ul className="facts-list">
                         <li className={this.state.heatPumpActive ? "red" : "inactive"}
                             style={{backgroundImage: `url(${require('../images/heatpump.png')})`}}></li>
-                        <li className={this.state.productionActive ? "big" : "inactive big"}
+                        <li className={this.state.productionActive ? `big ${this.state.productionStatus}` : "inactive big"}
                             style={{backgroundImage: `url(${require('../images/production.png')})`}}>
                         </li>
                         <li className="red"

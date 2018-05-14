@@ -445,7 +445,8 @@ a {
     background-size: 125%;
     background-color: #FFF;
     border: 1px solid #000;
-    transition: opacity 200ms ease;
+    opacity: 1;
+    transition: opacity 200ms ease, box-shadow 200ms ease;
     &.red {
       box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
       animation: glowRed 2s infinite;
