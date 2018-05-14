@@ -1,9 +1,9 @@
 # Cafe de Ceuvel
-[The App](...)
+[The App](https://fennadew.github.io/tour-de-ceuvel/)
 
 With `This` app an user can make his own tour in De Ceuvel providing information about the ecosystem and different boats that are connected with each other, using real time data.
 
-![Cover image of the app](doc-images/image-cover.png)
+![Cover image of the app](tour-de-ceuvel.gif)
 
 # Table of Content
 - [Getting started](#getting-started)
