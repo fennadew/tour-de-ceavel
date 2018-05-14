@@ -2,11 +2,11 @@ import React from 'react';
 import Footer from './Footer';
 
 import {data} from '../data/Data';
+import WebSocket from "../Websocket";
 
 const Detail = (props) => {
 
     const boat = data.find(b => b.link === props.match.url);
-    console.log(boat)
     let content;
 
     if (boat)
@@ -24,6 +24,7 @@ const Detail = (props) => {
                 <h2>Description</h2>
                 <p>{boat.detailText}</p>
             </section>
+            <WebSocket/>
             <Footer boat={boat}/>
         </div>
     else
