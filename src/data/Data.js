@@ -45,7 +45,7 @@ export const data = [
         nextLink: '/overview/urban-biorefinery',
         nextName:  'Urban biorefinery',
         nextImgUrl: require('../images/bio.png'),
-        detailText: 'De Greenhouse is het sluitstuk van de voedselkringloop op De Ceuvel. De gewassen groeien op de organische restromen van de hele De ceuvel'
+        detailText: 'The Greenhouse is the final piece of the food cycle at De Ceuvel. The crops grow on the organic residual flows of the entire De Ceuvel. The crops grow on the organic residual flows of the entire Ceuvel. Immediately after the harvest the vegetables and herbs go into the kitchen of the Café. Various workshops are also given in the Greenhouse'
     },
     {
         name: 'Urban biorefinery',
