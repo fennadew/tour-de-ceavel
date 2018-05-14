@@ -11,6 +11,7 @@ With `This` app an user can make his own tour in De Ceuvel providing information
 - [Getting started](#getting-started)
 - [Features](#features)
 - [Used technology](#used-technology)
+- [Data](#data)
 
 # Getting Started
 How to get started with this project:
@@ -32,6 +33,60 @@ The following is used in this project:
 - [React] A JavaScript library for building user interfaces
 - [SockJS] SockJS is a browser JavaScript library that provides a WebSocket-like object
 - [StompJS] This library provides a STOMP client for Web browser (using Web Sockets) or node.js applications (either using raw TCP sockets or Web Sockets).
+
+# Data
+We're cleaning the data and  
+```JavaScript
+state = {
+    heatPumpActive: false,
+    productionActive: false,
+    productionStatus: "green",
+    data: {}
+}
+getWebSocketData = (data) => {
+    let heatPumpActive = false;
+    let productionActive = false;
+    let productionStatus;
+    if (data.heatpump) {
+        heatPumpActive = true
+        data.heatpump = Math.round(data.heatpump * 100) /100
+
+    }
+
+    if (data.solar) {
+        productionActive = true;
+        let newSolar = -1 * data.solar
+        data.solar = Math.round(newSolar * 100) /100
+
+        let heatpump = data.heatpump ? data.heatpump : 0;
+        let diff = newSolar - (data.consumption + heatpump);
+        if (diff > 0) {
+            productionStatus = "green";
+        } else {
+            productionStatus = "red";
+        }
+    }
+    else {
+        productionStatus = "red";
+    }
+
+    data.consumption = Math.round(data.consumption * 100 ) / 100
+
+    this.setState({
+        data,
+        heatPumpActive,
+        productionActive,
+        productionStatus
+    });
+};
+```
+
+Realtime data small example:  
+```JavaScript
+<span className={this.state.heatPumpActive ? "left" : "left hidden"}>{this.state.data.heatpump}W</span>
+<span className={this.state.productionActive ? "center" : "center hidden"}>{this.state.data.solar}W</span>
+<span className={"right"}>{this.state.data.consumption}W</span>
+```
 
 [SockJS]: https://github.com/sockjs/sockjs-client
 [React]: https://reactjs.org/
