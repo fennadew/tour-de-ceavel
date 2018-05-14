@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0245c19f-afbc-4cf5-887c-be954c7588a5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Detail.js" afterPath="$PROJECT_DIR$/src/components/Detail.js" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/src/css/style.min.css" afterPath="$PROJECT_DIR$/src/css/style.min.css" />
       <change beforePath="$PROJECT_DIR$/src/css/style.min.css.map" afterPath="$PROJECT_DIR$/src/css/style.min.css.map" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" afterPath="$PROJECT_DIR$/src/scss/style.scss" />
@@ -428,12 +428,12 @@
       <workItem from="1525694386403" duration="25000" />
       <workItem from="1525694412095" duration="3186000" />
       <workItem from="1525852406260" duration="11692000" />
-      <workItem from="1526275716672" duration="20260000" />
+      <workItem from="1526275716672" duration="20308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35163000" />
+    <option name="totallyTimeSpent" value="35211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1060" height="1050" extended-state="6" />

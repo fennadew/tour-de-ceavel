@@ -1,7 +1,7 @@
 # Cafe de Ceuvel
 [The App](...)
 
-With `This` app an user can make his own tour in De Ceuvel providing information about the ecosystem and different boats that are connected to the ecosystem, using real time data.
+With `This` app an user can make his own tour in De Ceuvel providing information about the ecosystem and different boats that are connected with each other, using real time data.
 
 ![Cover image of the app](doc-images/image-cover.png)
 
