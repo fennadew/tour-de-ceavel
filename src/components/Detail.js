@@ -9,7 +9,7 @@ const Detail = (props) => {
 
     if (boat)
         content =
-            <section>
+            <section className="detail-container">
                 <div className="hexagon detail-hexagon" style={{backgroundImage: `url(${boat.imgUrl})`}}>
                     <h1>{boat.name}</h1>
                 </div>
