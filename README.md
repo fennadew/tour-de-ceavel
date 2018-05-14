@@ -35,7 +35,7 @@ The following is used in this project:
 - [StompJS] This library provides a STOMP client for Web browser (using Web Sockets) or node.js applications (either using raw TCP sockets or Web Sockets).
 
 # Data
-We're cleaning the data and  
+Cleaning the data and maths
 ```JavaScript
 state = {
     heatPumpActive: false,
