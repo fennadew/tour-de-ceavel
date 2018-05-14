@@ -110,16 +110,16 @@ section {
   box-sizing: border-box;
 }
 
-body, html, #root  {
+body, html, #root {
   height: 100%;
 }
 
 .app {
-	box-sizing: border-box;
-	background: #fff;
-	max-width: 30em;
-	margin: auto;
-	min-height: 100vh;
+  box-sizing: border-box;
+  background: #fff;
+  max-width: 30em;
+  margin: auto;
+  min-height: 100vh;
 }
 
 .section-margin .position {
@@ -417,7 +417,7 @@ a {
 
 .detail-container {
   position: relative;
-  min-height:  calc(100vh - 105px);
+  min-height: calc(100vh - 105px);
   padding: 0 16px;
   padding-bottom: 8em;
   h2 {
@@ -431,20 +431,43 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
+  flex-wrap: wrap;
+  margin-top: -75px;
+  position: relative;
+  z-index: 10;
   li {
     height: 75px;
     width: 75px;
     border-radius: 50%;
-    border: 2px solid #434343;
     line-height: 75px;
     text-align: center;
+    background-position: center;
+    background-size: 125%;
+    background-color: #FFF;
+    border: 1px solid #000;
+    transition: opacity 200ms ease;
+    &.red {
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+      animation: glowRed 2s infinite;
+    }
+    &.green {
+      box-shadow: 0 0 20px rgba(0,255,0,0.6);
+      animation: glowGreen 2s infinite;
+    }
+    &.inactive {
+      opacity: 0.3;
+    }
     &.big {
       width: 92px;
       height: 92px;
       line-height: 92px;
-      border: none;
       background-color: #80DAB9;
       color: #FFF;
+    }
+    &.block {
+      margin: 30px calc((100% - 50px) / 2);
+      height: 50px;
+      width: 50px;
     }
   }
 }
@@ -502,3 +525,27 @@ a {
 			Animations
 
 */
+
+@keyframes glowRed {
+   0% {
+     box-shadow: 0 0 25px rgba(255,0,0,0.6);
+   }
+   50% {
+     box-shadow: 0 0 10px rgba(255,0,0,0.6);
+   }
+   100% {
+     box-shadow: 0 0 25px rgba(255,0,0,0.6);
+   }
+ }
+
+@keyframes glowGreen {
+  0% {
+    box-shadow: 0 0 25px rgba(0,255,0,0.6);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0,255,0,0.6);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(0,255,0,0.6);
+  }
+}
