@@ -13,11 +13,10 @@ With `This` app an user can make his own tour in De Ceuvel providing information
 # Getting Started
 How to get started with this project:
 
-1. Clone the repo with `git clone https://github.com/Sam-Guliker/real-time-web.git` or download it from github
-2. Navigate to the project with `cd opdracht-1`
-3. Run `npm install` or `yarn` to install the dependencies
-4. Run `npm start` to start the server
-5. Go to [http://localhost:3000/](http://localhost:3000/)
+1. Clone the repo with `git clone https://github.com/fennadew/tour-de-ceuvel` or download it from github
+2. Run `npm install` or `yarn` to install the dependencies
+3. Run `npm start` to start the server
+4. Go to [http://localhost:3000/](http://localhost:3000/)
 
 # Features
 The following is possible with this application:
@@ -30,8 +29,8 @@ The following is used in this project:
 
 - [React] A JavaScript library for building user interfaces
 - [SockJS] SockJS is a browser JavaScript library that provides a WebSocket-like object
-- [stomp.js] This library provides a STOMP client for Web browser (using Web Sockets) or node.js applications (either using raw TCP sockets or Web Sockets).
+- [StompJS] This library provides a STOMP client for Web browser (using Web Sockets) or node.js applications (either using raw TCP sockets or Web Sockets).
 
 [SockJS]: https://github.com/sockjs/sockjs-client
 [React]: https://reactjs.org/
-[Stomp]: https://www.npmjs.com/package/stompjs
+[StompJS]: https://www.npmjs.com/package/stompjs
