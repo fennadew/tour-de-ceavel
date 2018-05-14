@@ -14,10 +14,9 @@ class Info extends React.Component {
           <article>
             <p> Hi I’m Lisa, and I will
               be your tour guide for
-              today. Tour de Ceuvel
-              will show you about the eco system within de Ceuvel.
+              today. De Ceuvel is a sustainable, closed-loop incubator that hosts a thriving community of creative and social enterprises.
             </p>
-            <a href="/overview">Het ecosysteem <img className="chev" src={require('../images/chev.svg')} /></a>
+            <a href="/overview">The Ecosystem <img className="chev" src={require('../images/chev.svg')} /></a>
           </article>
         </section>
       );

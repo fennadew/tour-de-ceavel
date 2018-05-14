@@ -18,11 +18,11 @@ export const data = [
         previousName: 'Biogasboat',
         previousImgUrl: require('../images/biogasboot.jpeg'),
         nextLink: '/overview/de-ceuvel-community',
-        nextName: 'De Ceuvel community',
+        nextName: 'Community',
         nextImgUrl: require('../images/community.jpg')
     },
     {
-        name: 'De Ceuvel community',
+        name: 'Community',
         imgUrl: require('../images/community.jpg'),
         link: '/overview/de-ceuvel-community',
         previousLink: '/overview/metabolic-lab',
@@ -37,7 +37,7 @@ export const data = [
         imgUrl: require('../images/greenhouse.png'),
         link: '/overview/greenhouse',
         previousLink: '/overview/de-ceuvel-community',
-        previousName: 'De Ceuvel community',
+        previousName: 'Community',
         previousImgUrl: require('../images/community.jpg'),
         nextLink: '/overview/urban-biorefinery',
         nextName:  'Urban biorefinery',
