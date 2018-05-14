@@ -91,3 +91,6 @@ Realtime data small example:
 [SockJS]: https://github.com/sockjs/sockjs-client
 [React]: https://reactjs.org/
 [StompJS]: https://www.npmjs.com/package/stompjs
+
+## Lisence
+Copyright © 2018 Sam Guliker & Fenna de Wilde. Released under the [MIT license](https://opensource.org/licenses/MIT)
