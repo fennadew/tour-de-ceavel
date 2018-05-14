@@ -18,7 +18,7 @@ const App = () => {
                 <Header/>
                 <main>
                     <Switch>
-                        <Route exact path="/" component={Splash}/>
+                        <Route exact path="/" component={Info}/>
                         <Route exact path="/info" component={Info}/>
                         <Route exact path="/overview" component={Navigation}/>
                         <Route path="/overview/:boat" component={Detail}/>
