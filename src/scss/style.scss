@@ -251,13 +251,15 @@ a {
   li {
     display: inline-block;
     width: 40vw;
+    max-width: 200px;
     height: calc(40vw * 1.1625);
+    max-height: calc(200px * 1.1625);
     margin: -7.5vw 10px;
 
     &:first-child,
     &:nth-child(4n) {
       display: block;
-      margin: 0 20vw;
+      margin: 0 50px;
     }
   }
 }
@@ -413,6 +415,8 @@ a {
 .detail-hexagon {
   width: 40vw;
   height: calc(40vw * 1.1625);
+  max-width: 200px;
+  max-height: calc(200px * 1.1625);
   margin: auto;
 }
 
