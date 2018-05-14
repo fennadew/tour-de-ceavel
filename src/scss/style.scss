@@ -426,6 +426,10 @@ a {
   }
 }
 
+.facts {
+  position: relative;
+}
+
 .facts-list {
   display: flex;
   justify-content: space-between;
@@ -452,7 +456,7 @@ a {
       animation: glowRed 2s infinite;
     }
     &.green {
-      box-shadow: 0 0 20px rgba(0,255,0,0.6);
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
       animation: glowGreen 2s infinite;
     }
     &.inactive {
@@ -466,10 +470,121 @@ a {
       color: #FFF;
     }
     &.block {
-      margin: 30px calc((100% - 50px) / 2);
+      margin: 60px calc((100% - 50px) / 2) 20px;
       height: 50px;
       width: 50px;
     }
+  }
+}
+
+.moving-lines {
+  opacity: 1;
+  transition: opacity 200ms ease;
+  position: absolute;
+  overflow: hidden;
+  &.hidden {
+    opacity: 0;
+  }
+  &.one, &.three {
+    width: 3px;
+    height: 34px;
+    hr {
+      height: 200%;
+      border-left: 3px dashed red;
+      border-top: none;
+      border-right: none;
+      animation: moveBackwards 2s linear infinite;
+    }
+  }
+  &.one {
+      top: 120px;
+      right: calc(75px/2);
+  }
+  &.three {
+    top: 120px;
+    left: calc(75px/2);
+  }
+  &.two {
+    height: 34px;
+    width: 3px;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    hr {
+      height: 200%;
+      border-top: none;
+      border-right: none;
+      border-left-style: dashed;
+      border-left-width: 3px;
+      transform: translateY(-50%);
+      animation: moveForward 2s linear infinite;
+    }
+  }
+  &.four {
+    height: 34px;
+    width: 3px;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    hr {
+      height: 200%;
+      border-top: none;
+      border-right: none;
+      border-left-style: dashed;
+      border-left-width: 3px;
+      transform: translateY(-50%);
+    }
+  }
+  &.five, &.six {
+    height: 15px;
+    width: calc(50% - 80px/2);
+    top: 142px;
+    overflow: hidden;
+    hr {
+      width: 200%;
+      border-bottom: none;
+      border-right: none;
+      border-top-style: dashed;
+      border-top-width: 3px;
+    }
+  }
+  &.five {
+    left: calc(75px/2);
+    hr {
+      animation: moveLeft 6s linear infinite;
+    }
+  }
+  &.six {
+    right: calc(75px/2);
+    hr {
+      animation: moveRight 6s linear infinite;
+    }
+  }
+}
+
+.red {
+  &.four {
+    hr {
+      animation: moveBackwards 2s linear infinite;
+    }
+  }
+    hr {
+      border-top-color: red;
+      border-left-color: red;
+    }
+  }
+
+.green {
+  &.four {
+    hr {
+      animation: moveForward 2s linear infinite;
+    }
+  }
+  hr {
+    border-top-color: green;
+    border-left-color: green;
   }
 }
 
@@ -528,26 +643,62 @@ a {
 */
 
 @keyframes glowRed {
-   0% {
-     box-shadow: 0 0 25px rgba(255,0,0,0.6);
-   }
-   50% {
-     box-shadow: 0 0 10px rgba(255,0,0,0.6);
-   }
-   100% {
-     box-shadow: 0 0 25px rgba(255,0,0,0.6);
-   }
- }
+  0% {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+  }
+}
 
 @keyframes glowGreen {
   0% {
-    box-shadow: 0 0 25px rgba(0,255,0,0.6);
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.6);
   }
   50% {
-    box-shadow: 0 0 10px rgba(0,255,0,0.6);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
   }
   100% {
-    box-shadow: 0 0 25px rgba(0,255,0,0.6);
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.6);
+  }
+}
+
+@keyframes moveBackwards {
+   0% {
+     transform: translateY(0);
+   }
+   100% {
+     transform: translateY(-50%);
+   }
+ }
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveForward {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -556,11 +707,13 @@ a {
   opacity: 0.01;
   transform: scale(0.9) translateX(-50px);
 }
+
 .fade-enter-active {
   opacity: 1;
   transform: scale(1) translateX(0);
   transition: all 300ms ease-out;
 }
+
 // Eind Transitie
 .fade-exit {
   opacity: 1;
@@ -572,3 +725,4 @@ a {
   transform: scale(0.9) translatex(-50px);
   transition: all 300ms ease-out;
 }
+
