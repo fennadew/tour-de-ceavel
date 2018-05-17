@@ -7,7 +7,6 @@ import Navigation from './components/Navigation';
 import Detail from './components/Detail';
 import Error from './components/Error';
 import Map from './components/map';
-import Splash from './components/Splash';
 import {CSSTransition, TransitionGroup} from 'react-transition-group'
 
 const App = withRouter(({location}) => (
